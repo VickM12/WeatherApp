@@ -11,7 +11,13 @@ namespace ForecastApp.Controllers
 {
     public class ForecastAppController : Controller
     {
-        //GET ForecastApp/SearchCity
+        private readonly IForecastRepository _forecastRepository;
+        //Dependency Injection
+        public ForecastAppController(IForecastRepository forecastAppRepo)
+        {
+            _forecastRepository = forecastAppRepo;
+        }
+           //GET ForecastApp/SearchCity
         public IActionResult SearchCity()
         {
             var viewModel = new SearchCity();
@@ -29,9 +35,19 @@ namespace ForecastApp.Controllers
         }
 
         //GET: ForecastApp/City
-        public IActionResult City(string city);
+        public IActionResult City(string city)
         {
+            WeatherResponse weatherResponse = _forecastRepository.GetForecast(city);
             City viewModel = new City();
+            if (weatherResponse != null)
+            {
+                viewModel.Name = weatherResponse.Name;
+                viewModel.Humidity = weatherResponse.Main.Humidity;
+                viewModel.Pressure = weatherResponse.Main.Pressure;
+                viewModel.Temp = weatherResponse.Main.Temp;
+                viewModel.Weather = weatherResponse.Weather[0].Main;
+                viewModel.Wind = weatherResponse.Wind.Speed;
+            }
             return View(viewModel);
         }
     }

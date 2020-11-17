@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\ForecastApp",
+    "\\src\\ForecastApp\\Config",
+    "\\src\\ForecastApp\\Controllers",
+    "\\src\\ForecastApp\\ForecastAppModels",
+    "\\src\\ForecastApp\\Repositories",
+    "\\src\\ForecastApp\\Views\\ForecastApp",
+    "\\src\\ForecastApp\\Views\\Shared"
+  ],
+  "SelectedNode": "\\src\\ForecastApp\\Config\\Constants.cs",
+  "PreviewInSolutionExplorer": false
+}

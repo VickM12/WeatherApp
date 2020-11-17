@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "0JZoG9d+91JLlGp4qTiXapIFE9rjmH2AqpLDJrSwiBHKE5SriOFDmF5Np6lpwwQlZWR4KNvMtz4tYYsZ4UoIVQ==",
+  "dgSpecHash": "G3p6bVJzUN7NtHTlGtwBUHPbwzR7vQOT4fl0Ekq64JBNS10YN6lcjZRxnsp3dKwSZcQE0FqmFFelAFTM400y4w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Owner\\DevProjects\\WeatherApp\\src\\src.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Owner\\DevProjects\\WeatherApp\\src\\ForecastApp\\src.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Owner\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Owner\\.nuget\\packages\\restsharp\\106.11.7\\restsharp.106.11.7.nupkg.sha512"
+  ],
   "logs": []
 }
